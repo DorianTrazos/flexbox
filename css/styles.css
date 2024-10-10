@@ -47,10 +47,13 @@ body {
 }
 
 .card {
+  position: relative;
   width: 311px;
   height: 222px;
   margin-bottom: 25px;
   padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px -11px rgb(131 167 210 / 0.5);
 }
 
 @media screen and (width > 768px) {
@@ -59,40 +62,47 @@ body {
   }
 }
 
-.card-1 {
-  background-color: orange;
+.card-cyan {
+  border-top: 4px solid #00c8c8;
 }
 
 @media screen and (width > 768px) {
-  .card-1 {
+  .card-cyan {
     margin-right: 30px;
   }
 }
 
-.card-2 {
-  background-color: steelblue;
+.card-red {
+  border-top: 4px solid #ff637b;
 }
 
 @media screen and (width > 768px) {
-  .card-2 {
+  .card-red {
     margin-bottom: 30px;
   }
 }
 
-.card-3 {
-  background-color: purple;
+.card-yellow {
+  border-top: 4px solid #fddf00;
 }
 
-.card-4 {
-  background-color: darkkhaki;
+.card-blue {
+  border-top: 4px solid #377fd2;
 }
 
 @media screen and (width > 768px) {
-  .card-4 {
+  .card-blue {
     margin-left: 30px;
   }
 }
 
 .card-title {
   margin: 0;
+}
+
+.card-image {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
+  width: 64px;
 }
